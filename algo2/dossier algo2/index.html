@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="type.css">
+    <title>Document</title>
+
+
+    <script>
+        // function classementLettres() {
+
+
+        //     const premiereChaine = "bonjour"
+        //     let morceaux = premiereChaine.split('')
+        //     console.log(morceaux)
+        //     morceaux.sort()
+        //     console.log(morceaux)
+        // }
+
+
+
+
+
+        // //ecrire une fonction qui va compter le nombre de voyelle dans une phrase ou un nom
+
+        // function nombreVoyelles() {
+
+        //     const str = "éthymologie"
+        //     voyelle(str)
+        //     const voyelle_list = 'aeiouyAEIOUY'
+        //     let cpt = 0
+
+        //     for (let i = 0; i < str.length; i++) {
+        //         if (voyelle_list.indexOf(str[i]) !==
+        //             -1) {
+        //             cpt += 1
+        //         }
+        //     }
+        //     return cpt
+
+        // }
+
+        //écrire une fonction qui prend en paramètre un tableau avec uniquement des chaines de caractères et sortir le mot le plus long
+
+
+
+
+
+
+        // function array() {
+        //     array.str()
+        //     console.log("tableau de phrase")
+
+        //     str = "des chiffres et des lettres pour le calcul et l'éthymologie"
+        //     let motLePlusLong = str.split("");
+        //     lePlusLong = 0;
+        //     mot = null;
+        //     for (i = 0; i < str.length - 1; i++) {
+        //         if (lePlusLong < str[i].length) {
+        //             lePlusLong = str[i].length;
+        //             mot = str[i];
+        //             console.log("le mot le plus long")
+        //         }
+        //     }
+        //     return mot;
+        // }
+
+
+
+
+        // function longuestWord() {
+        //     var phrase = "des chiffres et des lettres pour le calcul et l'éthymologie";
+        //     var str = phrase.split(" ");
+        //     var longest = 0;
+        //     var word = null;
+        //     for (var i = 0; i < str.length - 1; i++) {
+        //         if (longest < str[i].length) {
+        //             longest = str[i].length;
+        //             word = str[i];
+        //         }
+        //     }
+        //     console.log(word)
+        //     return word;
+        // }
+
+
+
+
+        // function firstWord() {
+
+        //     let phrase = " arthur que fais-tu en ces murs "
+
+        //     let mot = phrase.split(" ");
+        //     let firstMot = " ";
+        //     console.log('mot')
+
+        //     for (i = 0; i < mot.length; i++) {
+        //         if ((1 - mot[0])) {
+        //             firstMot - 1;
+        //         }
+
+        //     }
+        //     console.log(firstMot)
+        //     return firstMot
+
+
+
+        // retrouver le dernier mot sans qu'il y ait d'espace 
+
+
+
+
+        // function lastWord(str) {
+
+        //     let phrase = "  les derniers seront les premiers et les premiers seront les derniers "
+        //     console.log(phrase); // validation de la phrase
+        //     let re = " ";
+        //     let longueurPhrase = phrase.split(re); // supression de l'espace entre les mots
+        //     console.log(longueurPhrase);
+        //     i = 0
+        //     const longueurPhrase = str;
+        //     let mot = longueurPhrase.split("");
+        //     for (i = 0; i = longueurPhrase - 1; i++) // recherche en boucle du dernier mot 
+        //         if (longueurPhrase[i] - 1);
+        //     console.log("dernierMot");
+        //     for (i = 0; i = dernierMot; i++) // si denier mot trouvé alors continer jusqa'au suivant
+        //         if (dernierMot[i]);
+        //     consol.log("lastWord".str)
+        // }
+
+        //correction
+
+        // function lastWord(str) {
+        //     const lengthStr = str.length - 1
+        //     let i = 0
+        //     let newStr = " "
+        //     while (i < lengthStr) {
+        //         console.log(str[i] === " ")
+        //         i++
+        //     }
+        //     while (str[i] == " ") {
+        //         i--
+        //     }
+        //     while (str[i] != " ") {
+        //         i--
+        //     }
+        //     while (str[i] !== " ") {
+        //         console.log(str)
+        //         i++
+        //         newStr = newStr + str[i]
+        //     }
+        // }
+        // console.log(newStr)
+
+
+
+
+
+
+        function trouverLeDernierMot() {
+
+            let str = " combien de fois je vais devoir refaire cet exercice      "
+            let i = 0
+            let newStr = ''
+
+            while (i < str.length - 1) { // on part du début vers la fin de la phrase
+                i++
+                console.log("log1", str[i])
+            }
+            while (str[i] == " ") { // on retourne de la fin vers le dernier mot en enlevant les espaces
+                i--
+                console.log("log2", str[i])
+            }
+            while (str[i] != " ") { // on continue vers le mot jusqu'à ce qu'il n'y ai plus d'espaces
+                i--
+                console.log("log3", str[i])
+            }
+            i++
+            while (str[i] != " ") { // on repart dans le sens de lecture classique du mot
+                newStr = newStr + str[i]
+                console.log('test', str[i])
+                i++
+            }
+
+            console.log("dernierMot", newStr)
+        }
+    </script>
+</head>
+
+<body>
+    ​
+    <h1>A Web Page</h1>
+    <p id="Magic code">A Paragraph</p>
+
+
+
+
+    <div class="boutons">
+
+        <button type="button" onclick=classementLettres()>classement lettres</button>
+
+        <button type="button" onclick=nombreVoyelles()>nombre de voyelles</button>
+
+        <button type="button" onclick=longuestWord()>le mot le plus long</button>
+
+        <button type="button" onclick=firsttWord()>le 1er mot</button>
+
+        <button type="button" onclick=trouverLeDernierMot()>le dernier mot</button>
+
+
+    </div>
+
+    ​
+</body>
+
+</html>

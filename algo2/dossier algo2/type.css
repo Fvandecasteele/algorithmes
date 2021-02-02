@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    background-color: aqua;
+}
+h1{
+    font-size: 2em;
+    color: blue;
+}
+.boutons{
+    margin-top: 40px;
+}
+#magic code{
+    font-weight: bold;
+}

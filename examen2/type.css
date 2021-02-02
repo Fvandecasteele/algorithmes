@@ -1,0 +1,60 @@
+body
+{
+    background-color: beige;
+    width: 700px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1
+{
+    font-size: 2em;
+    margin:auto;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    
+    
+    
+}
+#texte
+{
+    display: flex;
+    text-align: center;
+    padding: 50px;
+   
+}
+.services
+{
+    width: 400px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    
+}
+footer
+{
+    font-size:x-small;
+    padding-top: 30px;
+}
+#pencil
+{
+
+    border: 2px black solid;
+}
+#entreprise
+{
+    border: 2px black solid;
+}
+#messenger
+{
+    border: 2px black solid;
+}

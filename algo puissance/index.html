@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<meta="charfset u-t-f-8">
+
+    <head>
+        <script>
+            // function nombrePremier(nbr) {
+
+
+
+
+            //     for (var i = 2; i < nbr; i++)
+            //         if (nbr % I === 0) return false;
+            //     return nbr > 1;
+            //     console.log(nombrePremier(2))
+
+            // }
+
+            let o = 27 % 10 // le modulo divise le nombre de part de son diviseur et renvoie le reste 
+            console.log(o)
+
+            * // function racineCarrée(nbr) {
+
+
+            // let res = 0
+
+            // for (let i = 0; i < nbr; i++) {
+            //     if (nbr === i * i) {
+            //         res = i
+
+            //     }
+
+
+            // }
+            // console.log("res", res)
+
+
+
+            // racineCarrée()
+            // }
+
+            *
+
+            function puissance(nbr, puissance) {
+                let res = 1
+                for (let i = 1; i <= puissance; i++) {
+                    res = res * nbr
+                }
+                console.log(res)
+            }
+
+
+
+            puissance(10, 3)
+            puissance(2, 3)
+            puissance(5, 3)
+            puissance(8, 2)
+
+
+            // *  exercice la suite de fibonacci
+
+
+
+            function fibonacci(n) {
+
+                fibonacci = null;
+
+                for (i = 0; i < n; i++) {
+                    if (n <= 1)
+                        return 1;
+
+                    if (n > 1)
+                        return 0;
+                    return fibonacci(n - 1) + fibonacci(n - 2)
+
+                }
+
+                console.log("res", )
+
+
+            }
+            fibonacci(15)
+
+
+
+
+            // *  2ème méthode
+
+            function fibonacci(n) {
+
+
+                let n = 1;
+                2;
+                3;
+                4;
+                5;
+                6;
+                7;
+                8;
+                9;
+                10;
+                11;
+                12;
+                13;
+                14;
+                15;
+
+                for (i = 0; i < n.lngth; i++) {
+                    if (i <= n) res1;
+
+                    console.log("loga", n[i])
+
+                    if (i > n)
+                        return;
+                    let res =
+                        fibonacci(n - 1) + fibonacci(n - 2)
+                }
+                console.log("res", res)
+            }
+
+
+            //correction
+
+
+
+
+
+            // *   • Écrire une fonction qui renvoie le nombre premier immédiatement supérieur ou égal au nombre passé en paramètre
+            // function nombrePremier2(nbr) {
+
+
+            //     for (i = 2; i < nbr; i++) {
+            //         if (nbr % i === 0) return false;
+            //         return nbr > 1;
+            //         if (start < 100) {
+            //             return nombrePremier2;
+            //         }
+
+            //         function nombrePremier2(premier) {
+            //             for (j = premier;; j++) {
+            //                 if (nombrePremier2 = Premier(j)) {
+            //                     break
+            //                 }
+            //             }
+            //             return j
+            //         }
+            //         console.log("res", nombrePremier2)
+            //     }
+
+            //     nombrePremier2(10)
+            // }
+
+
+
+            //*
+            //Write a program called alpha_mirror that takes a string and displays this string
+            // after replacing each alphabetical character by the opposite alphabetical
+            // character, followed by a newline.
+            // ‘a’ becomes ‘z’, ‘Z’ becomes ‘A’
+            // ‘d’ becomes ‘w’, ‘M’ becomes ‘N’
+            // and so on.
+            // Case is not changed.
+            // If the number of arguments is not 1, display only a newline.
+            // Examples:
+            // $>./alpha_mirror “abc”
+            // zyx
+            // $>./alpha_mirror “My horse is Amazing.” | cat -e
+            // Nb slihv rh Znzarmt.$
+            // $>./alpha_mirror | cat -e
+            // $
+            // $>
+
+
+
+            //*//            return jfunction mirroir(strM) {
+
+            // let str ="a;b;c;d;e;f;g;h;i;j;k;l;m;n;o;p;q;:r;s;t;u;v;w;x;y;z"
+            // let array = str.length
+            // console.log(array)
+            // let strLength = str.length
+            // let i = 0
+
+
+
+            //            for(i=0; i<str.length; i++) {
+            //                if( i !=strLength-1)
+            //            }
+
+            //            function inverse(inverser)
+            //            for (j !==inverser; ; j++) ;{
+            //                if(miroir == inverser(j)) {
+            //                break    
+            //                }
+            //            }
+            //            console.log("res", inverser)
+            //         }
+
+
+            // 2ème solution
+
+            // function mirroir(str) {
+
+            //     let str = "abcdefghijklmnopqrstuvwxyz"
+
+            //     let array = str.length
+
+            //     let strLength1 = " "
+
+            //     const lettres = str.length.split(" ");
+            //     console.log("log1", strlength)
+
+            //     for (i = o; i < strLength; i++) {
+            //         if (i == strLength)
+            //             console.log("str=>", strLength1)
+
+            //         let strLength2 = "  "
+
+            //         const strLength2 = str.Length.split(" ")
+
+            //         for (i = 0; i != strLength - 1; i++) {
+            //             if (i == strLength - 1)
+            //                 console.log("str<=", strLength2)
+
+            //             let mirroir = (strLength1 + strLength2)
+
+            //         }
+            //     }
+            //     console.log("mirroir", mirroir)
+
+
+            // }
+
+
+
+
+
+
+
+
+            // //       *        Ecrire une fonction qui renvoi le PGCD.
+            // // Le PGCD ou le Plus Grand Commun Diviseur de deux entiers qui est le plus grand entier pouvant diviser exactement les deux nombres (sans reste)
+
+            // // function pgcd(nbr1 , nbr2) {
+
+
+            // // let d1 = null;
+
+            // // let d2 = null;
+
+            // //              for(i=0; i<d1 ; i++) {
+            //                  if(nbr1/d1==1)
+            //                  console.log("d1",d1)
+            //              } 
+            //              for(i=0; i<D2 ; i++) {
+            //                 if(nbr/D2==1)
+            //                 console.log("d2",d2)
+            //              }
+            //              while(d1!=d2) {
+            //                  i++; 
+            //                 }
+            //                 console.log("pgcd",pgcd)
+
+            // }
+            //             pgcd(2043 , 815)
+            //             pgcd(188 , 774)
+
+
+            // // 2 ème méthode
+
+            //        functionpgcd(d1,d2) ; {
+
+            //         let i =0 
+
+
+            //         while(i<d1) i++
+
+            //        }
+
+
+
+
+
+
+
+
+
+
+            // *     // function sansDoublons() {
+
+            //     let str1 = "non rien de rien"
+
+            //     let str2 = " non je ne regrette rien"
+
+            //     let totalStr = str1 + str2
+
+            //     let phrase1 = (str1.length)
+
+            //     let phrase2 = (str2.length)
+
+            //     i = 0
+
+            //     let str3 = " "
+            //     x = str *
+
+            //         while (i < str1.length) {
+            //             console.log("log1", str1)
+            //             i++
+            //         }
+
+            //     while (i < str2.length) {
+            //         console.log("log2 ", str2)
+            //         i++
+            //     }
+
+            //     while (i = str * )
+
+            //         for (i = 0; i = str1 + str2; i++)
+            //         if (i != x * str)
+
+            //             console.log("lesDeuxPhrases", str3)
+
+
+
+            // }
+
+
+
+            // **     // correction
+
+            //         <!DOCTYPE html>
+            // <html lang="en">
+            // <head>
+            //     <script>
+            //         fStr="Avez-vous déjà vu un ver allant vers un verre en verre vert à l'envers?"
+            //         sStr="Quarante carottes crues croient que croquer crée des crampes."
+            //         tStr = ""
+            //         tStr = tStr + fStr + sStr        
+            //         // console.log(tStr)
+            //         function double(tStr){
+            //             forthStr=""
+            //             i=0;
+            //             for(i=0; i< tStr.length; i++){
+            //                 if(!forthStr.includes(tStr[i])){
+            //                     forthStr = forthStr + tStr
+            //                 }
+            //             }
+            //             console.log(forthStr)
+            //         }
+            //         double(tStr)
+            //
+
+
+
+
+
+            // **     // <!-- // correction
+
+
+
+
+
+            //         function clic() {  
+
+
+            //             // qui prend deux chaînes et affiche, sans double, les caractères qui apparaissent dans l'une ou l'autre des chaînes.
+            //             // EX : str:1 "zpadinton" - str:2 “paqefwtdjetyiytjneytjoeyjnejeyj” - résultat : "zpadintoqefwjy"
+            //             function quiNeDoublePasLesCaracteres(str1, str2) {
+            //                 let fusionStr = str1 + str2
+            //                 let str3 = ""
+            //                 str3 += fusionStr[0]
+
+            //                 for (let i = 0 ; i < fusionStr.length ; i++) {
+            //                     let egalite = false;
+            //                     for (let j = 0 ; j < str3.length ; j++) {
+            //                         if (fusionStr[i] === str3[j]) {
+            //                             egalite = true;
+            //                         }
+            //                     }
+            //                     if (egalite == false) {
+            //                         str3 += fusionStr[i] // str3 = str3 + fusionStr[i]
+            //                     }
+            //                 }
+            //                 console.log("Les strings '", str1, "' et' ", str2, "' deviennent :", str3)
+            //             }
+            //             quiNeDoublePasLesCaracteres('cyclopentanoper hydrophé nanthrène', 'glycosylphosphati dyléthano lamine')
+
+
+
+            //             document.getElementById("bouton").innerHTML = "Bien joué !";
+            //         }
+
+
+            //
+            //
+            //
+
+
+            // // </head>
+            // // // // -->//correction // removeDuplicates(str) { // // Used as index in the modified string // let n = str.length // // Traverse through all characters // let res = '' // let a // for (a = 0; a //
+            // < n; a++) { // // Check if str[i] is present before
+            // it // let j // for (j=a + 1; j < n; j++) { // if (str[a]==s tr[j]) break // } // // If not present, then add it to // // result. // if (j==n ) { // res=r es + str[a] // } // } // return res // } -->
+
+
+
+            // function alphabetEnMajuscule(str) { // let alphabet = "abcdefghijklmnopqrstuvwxyz" // en utilisant seulement les boucles FOR et WHILE // let lettresSurDeux = ' ' // i = 0 // for (i > 2, "alphabet".length; i++) { // mise en majuscule possible en javascript
+            // avec "ToLocaleUpperCase" // if (i = ''.alphabet.length) { // lettresSurDeux++; // } // console.log("lettresSurDeux", alphabet.length) // } // function inverserLesLettres(str) { -->
+        </script>
+    </head>
+
+    <body>
+        ​
+        <h1>Page de SIMULATION</h1>
+        <p id="Magic code">A Paragraph</p>
+
+
+
+
+
+
+        <button type="button" onclick=sansDoublons()>sans doublons</button>
+
+        <button type="button" onclick=alphabetEnMajuscule()>alphabet</button>
+
+        <button type="button" onclick=inverserLesLettres()>inversion</button>
+
+        <button type="button" onclick=nombrePremier()>nombre 1er</button>
+
+        <button type="button" onclick=racineCarrée()>racine carrée</button>
+
+        <button type="button" onclick=puissance()>puissance</button>
+
+        <button type="button" onclick=iterativeFactorial()>factorielle itérative</button>
+
+        <button type="button" onclick=nombrePremier2()>nombre premier+1</button>
+
+        <button type="button" onclick=pgcd()>pgcd</button>
+
+        <button type="button" onclick=functionmirroir()>mirroir</button>
+
+        <button type="button" onclick=functionfibonacci(n)>fibonacci</button> ​
+
+    </body>
+
+</html>
